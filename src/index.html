@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html>
+<br>
 
 <head>
   <meta charset="utf-8">
-  <title>Tarjeta de crédito válida</title>
+  <title>iWall-e</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<br>
+<!-- 1er Slice -->
+<!-- placeholders -->
+<main class="container" id="login">
+  <section class="left">
+    <h1>iWall-e</h1>
+    <h2> Where you can easily take your cards everywhere!</h2>
+    <h3> icon</h3>
+  </section>
+  <div class="right">
 
-  <!-- placeholders -->
+    <h1>Login</h1>
+    <h3 class="header">Please enter your information below</h3>
 
-  <main class="login" id="login">
-    <section class="left">
-      <h1>iWall-e</h1>
-      <h2> basic description about the app</h2>
-      <h3> icon</h3>
-    </section>
-    <div class="box">
+    <input class="input" id="name" type="text" placeholder="Username">
+    <br /> <br />
 
-      <h1>Login</h1>
-      <h3 class="header">Please enter your information below</h3>
+    <input class="input" id="password" type="password" placeholder="Password">
+    <br /> <br />
 
-      <input class="input" id="username" type="text" placeholder="Username">
-      <br /> <br />
+    <!-- boton login/enter -->
+    <button class="buttonColor" id="button">Login</button>
 
-      <input class="input" id="password" type="password" placeholder="Password">
-      <br /> <br />
+  </div>
+</main>
 
-      <!-- boton login/enter -->
-      <button class="buttonColor" id="button">Login</button>
+<!-- 2do Slide choices -->
+<div class="container hide" id="secondSlide">
+  <div class="segundoSlice left">
+    <h1 id="h1"></h1>
+  </div>
 
+  <!-- <img class="add"
+     src="https://static.vecteezy.com/system/resources/previews/001/500/603/non_2x/add-icon-free-vector.jpg"> -->
+
+  <div class="choices right ">
+    <img class="add"
+      src="https://static.vecteezy.com/system/resources/previews/001/500/603/non_2x/add-icon-free-vector.jpg" />
+
+    <div class="cards">
+      <div class="box">
+        <button class="hideshow" id="hideshow">Show</button>
+        <p>Card number</p>
+        <p>Cvv</p>
+        <p>Expiracy date</p>
+      </div>
+      <div class="box">
+        <button class="hideshow" id="hideshow">Show</button>
+        <p>Card number</p>
+        <p>Cvv</p>
+        <p>Expiracy date</p>
+      </div>
     </div>
-  </main>
+  </div>
+</div>
 
-  <script src="index.js" type="module"></script>
+
+
+
+<script src="index.js" type="module"></script>
 </body>
 
 </html>

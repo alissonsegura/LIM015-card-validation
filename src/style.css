@@ -1,4 +1,4 @@
-.login {
+.container {
     font-family: 'Arial';
     background-color: #fafafa;
     height: 100vh;
@@ -15,7 +15,7 @@
       }
 
   .buttonColor{ 
-    padding: 4px 58px;
+    padding: 4px 40px;
     background: #8258FA;
     border-radius: 6px;
     color: white;
@@ -25,10 +25,10 @@
     color: #8258FA;
 }
 
-.box {
+.right {
   background-color: white;
   box-shadow: 3px 3px 5px #999;
-  width: 50%;
+  width: 75%;
   padding-top: 200px ;
 
 }
@@ -36,8 +36,51 @@
 .left {
     background-color: #8258FA;
     padding: 40px 120px;
-    width: 50%;
+    width: 15%;
     box-shadow: 3px 3px 5px #999;
     padding-top: 200px
+
+}
+
+.welcome {
+  font-family: 'Arial';
+    background-color: #fafafa;
+    height: 100vh;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+
+}
+
+.logo{
+  text-align: center;
+
+}
+
+.choices {
+  text-align: center;
+  padding-top: 8px;
+}
+
+
+.add{
+  width: 10%;
+  float: right;
+  padding-right: 12px;
+
+}
+
+.cards{
+  padding-top: 200px;
+  
+}
+
+.box {
+  background-color: #999;
+}
+
+.hide{
+  display: none;
 
 }

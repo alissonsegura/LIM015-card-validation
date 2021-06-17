@@ -73,6 +73,7 @@ buttonModal.addEventListener("click", function () {
     const numberValid = validator.isValid(number)
     if (numberValid === true) {
         alert("Card was added succesfully");
+        modalb.classList.remove("modalact")
     }
     if (numberValid === false) {
         alert("Card is incorrect");

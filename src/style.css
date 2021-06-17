@@ -72,15 +72,71 @@
 }
 
 .cards{
-  padding-top: 200px;
+  width: 300px;
+  padding-top: 150px;
+  margin-left: 350px;
+  margin-right: 180px;  
   
 }
 
 .box {
   background-color: #999;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+  border-radius: 7px;
+  height: 180px;
 }
 
 .hide{
   display: none;
 
 }
+.cardone{
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+.cardtwo{
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);;
+}
+
+.cardthree{
+  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+}
+
+.modalclose{
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+}
+
+.modalb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+background-color: rgb(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s , opacity 0.5s; 
+}
+ .modalact{
+  visibility: visible ;
+  opacity: 1;
+} 
+
+.modal{
+  position: relative;
+  background-color: #fafafa ;
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+

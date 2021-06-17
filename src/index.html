@@ -1,72 +1,96 @@
 <!DOCTYPE html>
-<br>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <title>iWall-e</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<br>
-<!-- 1er Slice -->
-<!-- placeholders -->
-<main class="container" id="login">
-  <section class="left">
-    <h1>iWall-e</h1>
-    <h2> Where you can easily take your cards everywhere!</h2>
-    <h3> icon</h3>
-  </section>
-  <div class="right">
+<body>
+  <br>
+  <!-- 1er Slice -->
+  <main class="container" id="login">
+    <section class="left">
+      <h1>iWall-e</h1>
+      <h2> Where you can easily take your cards everywhere!</h2>
+      <h3> icon</h3>
+    </section>
+    <div class="right">
 
-    <h1>Login</h1>
-    <h3 class="header">Please enter your information below</h3>
+      <h1>Login</h1>
+      <h3 class="header">Please enter your information below</h3>
 
-    <input class="input" id="name" type="text" placeholder="Username">
-    <br /> <br />
+      <input class="input" id="name" type="text" placeholder="Username">
+      <br /> <br />
 
-    <input class="input" id="password" type="password" placeholder="Password">
-    <br /> <br />
+      <input class="input" id="password" type="password" placeholder="Password">
+      <br /> <br />
 
-    <!-- boton login/enter -->
-    <button class="buttonColor" id="button">Login</button>
+      <!-- boton login/enter -->
+      <button class="buttonColor" id="button">Login</button>
 
-  </div>
-</main>
+    </div>
+  </main>
 
-<!-- 2do Slide choices -->
-<div class="container hide" id="secondSlide">
-  <div class="segundoSlice left">
-    <h1 id="h1"></h1>
-  </div>
+  <!-- 2do Slide choices -->
+  <div class="container hide" id="secondSlide">
+    <div class="segundoSlice left">
+      <h1 id="h1"></h1>
+    </div>
 
-  <!-- <img class="add"
-     src="https://static.vecteezy.com/system/resources/previews/001/500/603/non_2x/add-icon-free-vector.jpg"> -->
+    <!-- TARJETAS -->
 
-  <div class="choices right ">
-    <img class="add"
-      src="https://static.vecteezy.com/system/resources/previews/001/500/603/non_2x/add-icon-free-vector.jpg" />
+    <div class="choices right ">
+      <img class="add" id="addcard"
+        src="https://static.vecteezy.com/system/resources/previews/001/500/603/non_2x/add-icon-free-vector.jpg" />
 
-    <div class="cards">
-      <div class="box">
-        <button class="hideshow" id="hideshow">Show</button>
-        <p>Card number</p>
-        <p>Cvv</p>
-        <p>Expiracy date</p>
-      </div>
-      <div class="box">
-        <button class="hideshow" id="hideshow">Show</button>
-        <p>Card number</p>
-        <p>Cvv</p>
-        <p>Expiracy date</p>
+      <div class="cards">
+        <div class="box cardone">
+          <button class="hideshow" id="hideshow">Show</button>
+          <p id="creditCardNumber"> 4283376323748207</p>
+          <p>Cvv</p>
+          <p>Expiracy date</p>
+        </div>
+        <br>
+        <div class="box cardtwo">
+          <button class="hideshow" id="hideshow2">Show</button>
+          <p id="creditCardNumberTwo">4488376323744532</p>
+          <p>Cvv</p>
+          <p>Expiracy date</p>
+        </div>
+        <br>
+        <div class="box cardthree">
+          <button class="hideshow" id="hideshow3">Show</button>
+          <p id="creditCardNumberThree">4913370723341535</p>
+          <p id="cvv">372</p>
+          <p id="expdate">05/27</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+  <!-- MODAL -->
+  <div id="modalb" class="modalb">
+    <div class="modal">
+      <span class="modalclose" id="modalclose">X</span>
+      <h1> Some TEXT</h1>
+      <input type="text" pattern="\d*" maxlength="16" class="input" id="cardNum" placeholder="Card Number" />
+      <br><br>
+      <input type="text" class="input" id="expDate" placeholder="MM/YEAR" />
+      <br><br>
+      <input type="text" pattern="\d*" maxlength="3" class="input" id="cvvNum" placeholder="Cvv" />
+      <br><br>
+      <button class="buttonColor" id="buttonModal"> Add Card</button>
 
+    </div>
 
+  </div>
 
-<script src="index.js" type="module"></script>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>

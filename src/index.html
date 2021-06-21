@@ -15,9 +15,10 @@
   <!-- 1er Slice -->
   <main class="container" id="login">
     <section class="left">
-      <h1>iWall-e</h1>
+      <h1> iWall-e</h1>
       <h2> Where you can easily take your cards everywhere!</h2>
-      <h3> icon</h3>
+      <img class="cardicon" id="cardicon"
+        src="https://icons-for-free.com/iconfiles/png/512/credit+card+debit+card+master+card+icon-1320184902602310693.png" />
     </section>
     <div class="right">
 
@@ -40,32 +41,39 @@
   <div class="container hide" id="secondSlide">
     <div class="segundoSlice left">
       <h1 id="h1"></h1>
+      <img class="lockicon"
+        src="https://cdn4.iconfinder.com/data/icons/flat-design-security-set-one/24/padlock-combination-red-512.png" />
     </div>
 
-    <!-- TARJETAS -->
+    <!-- TARJETAS  PASAR SOURCE/ Y NOMBRE DE IMAGEN.PNG -->
 
     <div class="choices right ">
       <img class="add" id="addcard"
         src="https://static.vecteezy.com/system/resources/previews/001/500/603/non_2x/add-icon-free-vector.jpg" />
 
-      <div class="cards">
+
+      <button class="hideshow" id="show">Show</button>
+      <button class="hideshow" id="hide">Hide</button>
+
+
+      <div id="cards" class="cards">
         <div class="box cardone">
-          <button class="hideshow" id="hideshow">Show</button>
-          <p id="creditCardNumber"> 4283376323748207</p>
-          <p>Cvv</p>
-          <p>Expiracy date</p>
+          <p id="creditCardNumber" class="creditCardNumber"> 4283376323748207</p>
+          <p>963</p>
+          <p>04/25</p>
         </div>
+
         <br>
+
         <div class="box cardtwo">
-          <button class="hideshow" id="hideshow2">Show</button>
-          <p id="creditCardNumberTwo">4488376323744532</p>
-          <p>Cvv</p>
-          <p>Expiracy date</p>
+          <p id="creditCardNumberTwo" class="creditCardNumber">4488376323744532</p>
+          <p>586</p>
+          <p>01/22</p>
         </div>
+
         <br>
         <div class="box cardthree">
-          <button class="hideshow" id="hideshow3">Show</button>
-          <p id="creditCardNumberThree">4913370723341535</p>
+          <p id="creditCardNumberThree" class="creditCardNumber">4913370723341535</p>
           <p id="cvv">372</p>
           <p id="expdate">05/27</p>
         </div>
@@ -76,16 +84,19 @@
   <!-- MODAL -->
   <div id="modalb" class="modalb">
     <div class="modal">
+      <img class="modalimage" src="imagenes/undraw_Safe_re_kiil.png" alt="" srcset="">
       <span class="modalclose" id="modalclose">X</span>
-      <h1> Some TEXT</h1>
-      <input type="text" pattern="\d*" maxlength="16" class="input" id="cardNum" placeholder="Card Number" />
-      <br><br>
-      <input type="text" class="input" id="expDate" placeholder="MM/YEAR" />
-      <br><br>
-      <input type="text" pattern="\d*" maxlength="3" class="input" id="cvvNum" placeholder="Cvv" />
-      <br><br>
-      <button class="buttonColor" id="buttonModal"> Add Card</button>
-
+      <form>
+        <h1> Enter your information below <br> to add your card </h1>
+        <input type="text" maxlength="16" class="input" id="cardNum" name="information" required
+          placeholder="Card Number" />
+        <br><br>
+        <input type="text" class="input" id="expDate" placeholder="MM/YEAR" />
+        <br><br>
+        <input type="text" pattern="\d*" maxlength="3" class="input" id="cvvNum" placeholder="Cvv" />
+        <br><br>
+        <button class="buttonColor" id="buttonModal"> Add Card</button>
+      </form>
     </div>
 
   </div>

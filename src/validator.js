@@ -9,7 +9,7 @@ const validator = {
         number.push(creditCardNumber[i])
       }
     }
-    return number.join("");
+    return number.join(""); //array en un string
   },
   isValid: function (cardNum) {
     const array = cardNum.split('').reverse()

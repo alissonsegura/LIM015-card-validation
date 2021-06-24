@@ -38,16 +38,16 @@
   </main>
 
   <!-- 2do Slide choices -->
-  <div class="container hide" id="secondSlide">
-    <div class="segundoSlice left">
+  <main class="container hide" id="secondSlide">
+    <section class="segundoSlice left">
       <h1 id="h1"></h1>
       <img class="lockicon"
         src="https://cdn4.iconfinder.com/data/icons/flat-design-security-set-one/24/padlock-combination-red-512.png" />
-    </div>
+    </section>
 
-    <!-- TARJETAS  PASAR SOURCE/ Y NOMBRE DE IMAGEN.PNG -->
+    <!-- TARJETAS  -->
 
-    <div class="choices right ">
+    <section class="choices right ">
       <img class="add" id="addcard"
         src="https://static.vecteezy.com/system/resources/previews/001/500/603/non_2x/add-icon-free-vector.jpg" />
 
@@ -56,7 +56,7 @@
       <button class="hideshow" id="hide">Hide</button>
 
 
-      <div id="cards" class="cards">
+      <section id="cards" class="cards">
         <div class="box cardone">
           <p id="creditCardNumber" class="creditCardNumber"> 4283376323748207</p>
           <p>963</p>
@@ -77,29 +77,30 @@
           <p id="cvv">372</p>
           <p id="expdate">05/27</p>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </main>
 
   <!-- MODAL -->
-  <div id="modalb" class="modalb">
-    <div class="modal">
-      <img class="modalimage" src="imagenes/undraw_Safe_re_kiil.png" alt="" srcset="">
+  <main id="modalb" class="modalb">
+    <section class="modal">
+      <img class="modalimage" src="imagenes/undraw_Safe_re_kiil.png" alt="" srcset="" />
       <span class="modalclose" id="modalclose">X</span>
-      <form>
+      <div>
         <h1> Enter your information below <br> to add your card </h1>
-        <input type="text" maxlength="16" class="input" id="cardNum" name="information" required
-          placeholder="Card Number" />
+        <input type="text" maxlength="16" class="input" id="cardNum"
+          onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="Card Number" />
         <br><br>
         <input type="text" class="input" id="expDate" placeholder="MM/YEAR" />
         <br><br>
-        <input type="text" pattern="\d*" maxlength="3" class="input" id="cvvNum" placeholder="Cvv" />
+        <input type="text" maxlength="3" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+          class="input" id="cvvNum" placeholder="Cvv" />
         <br><br>
         <button class="buttonColor" id="buttonModal"> Add Card</button>
-      </form>
-    </div>
+      </div>
+    </section>
 
-  </div>
+  </main>
 
   <script src="index.js" type="module"></script>
 </body>

@@ -61,8 +61,6 @@ buttonModal.addEventListener("click", function () {
       </div>
       </div>`
         // Agrego mi div 
-
-
     }
 
     if (numberValid === false) {
@@ -88,6 +86,3 @@ hide.addEventListener("click", function () {
     creditCardNumberThree.innerText = validator.maskify(creditCardNumberThree.innerHTML);
 
 });
-
-
-

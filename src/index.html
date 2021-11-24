@@ -11,92 +11,165 @@
 </head>
 
 <body>
-  <br>
   <!-- 1er Slice -->
-  <main class="container" id="login">
-    <section class="left">
-      <h1> iWall-e</h1>
-      <h2> Where you can easily take your cards everywhere!</h2>
-      <img class="cardicon" id="cardicon"
-        src="https://icons-for-free.com/iconfiles/png/512/credit+card+debit+card+master+card+icon-1320184902602310693.png" />
-    </section>
-    <div class="right">
+  <main class="" id="firstViewContainer">
 
-      <h1>Login</h1>
-      <h3 class="header">Please enter your information below</h3>
+    <div class="description-container">
+      <p class="welcome-to"> Welcome to </p>
+      <strong class="app-name">iWall-e</strong>
+    </div>
 
-      <input class="input" id="name" type="text" placeholder="Username">
-      <br /> <br />
+    <p class="app-description"> A new financial experience where you can easily take your cards everywhere in a full
+      digital way. </p>
 
-      <input class="input" id="password" type="password" placeholder="Password">
-      <br /> <br />
+    <div class="svg-container">
+      <img
+        src="https://raw.githubusercontent.com/alissonsegura/LIM015-card-validation/master/src/imagenes/Group%2022.svg"
+        alt="Vector" />
+    </div>
 
-      <!-- boton login/enter -->
-      <button class="buttonColor" id="button">Login</button>
+    <div class="image-button-container">
+      <img class="image-login" id="cardicon"
+        src="https://raw.githubusercontent.com/alissonsegura/LIM015-card-validation/master/src/imagenes/Group%2019.png" />
 
+      <div class="svg-wrapper">
+        <img
+          src="https://raw.githubusercontent.com/alissonsegura/LIM015-card-validation/master/src/imagenes/Group%2022.svg"
+          alt="Vector" />
+      </div>
+      <button class="button-login" id="button-getstarted">Get Started</button>
     </div>
   </main>
 
-  <!-- 2do Slide choices -->
-  <main class="container hide" id="secondSlide">
-    <section class="segundoSlice left">
-      <h1 id="h1"></h1>
-      <img class="lockicon"
-        src="https://cdn4.iconfinder.com/data/icons/flat-design-security-set-one/24/padlock-combination-red-512.png" />
-    </section>
+  <!-- SECOND VIEW -->
 
-    <!-- TARJETAS  -->
+  <div class="secondViewContainer" id="secondViewContainer">
+    <div class="description-container space">
+      <img class="wallet-image"
+        src="https://raw.githubusercontent.com/alissonsegura/LIM015-card-validation/master/src/imagenes/Group%2070.svg"
+        alt="wallet-svg" />
+      <strong class="login-text">SIGN IN</strong>
+      <p class="app-description">Please enter your information below</p>
+    </div>
 
-    <section class="choices right ">
-      <img class="add" id="addcard"
-        src="https://static.vecteezy.com/system/resources/previews/001/500/603/non_2x/add-icon-free-vector.jpg" />
+    <div class="login-box">
 
+      <div class="svg-image">
+        <img
+          src="https://raw.githubusercontent.com/alissonsegura/LIM015-card-validation/master/src/imagenes/Group%2022.svg"
+          alt="Vector" />
+      </div>
 
-      <button class="hideshow" id="show">Show</button>
-      <button class="hideshow" id="hide">Hide</button>
+      <div class="input-div">
+        <input class="input-email" id="name" type="text" placeholder=" " required>
+        <label for="name" class="input-label">Name & Last Name</label>
+      </div>
 
+      <div class="input-div">
+        <input class="input-email" id="email" type="text" placeholder=" " required>
+        <label for="name" class="input-label">Email</label>
+      </div>
 
-      <section id="cards" class="cards">
-        <div class="box cardone">
-          <p id="creditCardNumber" class="creditCardNumber"> 4283376323748207</p>
-          <p>963</p>
-          <p>04/25</p>
-        </div>
+      <div class="svg-wrapper">
+        <img
+          src="https://raw.githubusercontent.com/alissonsegura/LIM015-card-validation/master/src/imagenes/Group%2022.svg"
+          alt="Vector" />
+      </div>
 
-        <br>
+      <div class="input-div">
+        <input class="input-email" id="password" type="password" placeholder=" " required>
+        <label for="name" class="input-label">Password</label>
+      </div>
 
-        <div class="box cardtwo">
-          <p id="creditCardNumberTwo" class="creditCardNumber">4488376323744532</p>
-          <p>586</p>
-          <p>01/22</p>
-        </div>
+      <!-- boton login/enter -->
+      <button class="button-login" id="button">Login</button>
+    </div>
 
-        <br>
-        <div class="box cardthree">
-          <p id="creditCardNumberThree" class="creditCardNumber">4913370723341535</p>
-          <p id="cvv">372</p>
-          <p id="expdate">05/27</p>
-        </div>
-      </section>
-    </section>
+  </div>
+
+  <!-- 3rd Slide -->
+  <!-- <main class="" id="secondSlide"> -->
+  <main class='third-slide-container'>
+
+    <p class='main-text'>My Cards</p>
+
+    <div class="">
+      <h1 class='display-user-name' id="h1"></h1>
+    </div>
   </main>
 
+  <!-- CARDS -->
+  <section class="choices right card-container">
+    <img class="add-icon" id="addcard"
+      src="https://static.vecteezy.com/system/resources/previews/001/500/603/non_2x/add-icon-free-vector.jpg" />
+
+    <div class="button-options-container">
+      <div class="button-space">
+        <button class="button-options" id="show">Show</button>
+      </div>
+      <button class="button-options" id="hide">Hide</button>
+    </div>
+
+
+    <section id="cards" class="cards">
+      <div class="box cardone text-cards">
+        <p id="creditCardNumber" class="creditCardNumber text-cards"> 4283376323748207</p>
+        <p class="text-cards">963</p>
+        <p class="text-cards">04/25</p>
+      </div>
+
+      <div class=" box cards cardtwo text-cards">
+        <p id="creditCardNumberTwo" class="creditCardNumber">4488376323744532</p>
+        <p class="text-cards">586</p>
+        <p class="text-cards">01/22</p>
+      </div>
+
+      <div class="box cards cardthree text-cards">
+        <p id="creditCardNumberThree" class="creditCardNumber">4913370723341535</p>
+        <p class="text-cards" id="cvv">372</p>
+        <p class="text-cards" id="expdate">05/27</p>
+      </div>
+
+    </section>
+  </section>
+
+
+
   <!-- MODAL -->
+
   <main id="modalb" class="modalb">
+
     <section class="modal">
-      <img class="modalimage" src="imagenes/undraw_Safe_re_kiil.png" alt="" srcset="" />
+
       <span class="modalclose" id="modalclose">X</span>
-      <div>
+
+      <div class="modal-text">
         <h1> Enter your information below <br> to add your card </h1>
-        <input type="text" maxlength="16" class="input" id="cardNum"
-          onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="Card Number" />
-        <br><br>
-        <input type="text" class="input" id="expDate" placeholder="MM/YEAR" />
-        <br><br>
-        <input type="text" maxlength="3" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
-          class="input" id="cvvNum" placeholder="Cvv" />
-        <br><br>
-        <button class="buttonColor" id="buttonModal"> Add Card</button>
+
+
+        <div class="modal-box">
+
+          <div class="input-modal-container">
+            <input type="text" maxlength="16" class="input-modal-info" id="cardNum"
+              onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder=" " required />
+
+            <label for="name" class="input-label">Card Number</label>
+          </div>
+
+          <div class="input-modal-container">
+            <input type="text" maxlength="16" class="input-modal-info" id="cardNum"
+              onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder=" " />
+            <label for="name" class="input-label">MM/YEAR</label>
+          </div>
+
+          <div class="input-modal-container">
+            <input type="text" maxlength="3" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+              class="input-modal-info" id="cvvNum" placeholder=" " />
+            <label for="name" class="input-label">Cvv</label>
+
+            <button class="button-modal" id="buttonModal"> Add Card</button>
+          </div>
+        </div>
       </div>
     </section>
 
